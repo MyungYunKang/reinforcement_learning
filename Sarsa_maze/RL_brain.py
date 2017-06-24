@@ -50,9 +50,9 @@ class QLearningTable(RL):
 
 		self.q_table.ix[s, a] += self.lr * (q_target - q_predict) # 업데이트
 
-class SalsaTable(RL):
+class SarsaTable(RL):
 	def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
-		super(SalsaTable, self).__init__(actions, learning_rate, reward_decay, e_greedy)
+		super(SarsaTable, self).__init__(actions, learning_rate, reward_decay, e_greedy)
 
 	def learn(self, s, a, r, s_, a_):
 		self.check_state_exist(s_)

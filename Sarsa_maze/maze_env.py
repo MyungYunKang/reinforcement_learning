@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import numpy as np
 np.random.seed(1)
-import tkinter as tk
+import Tkinter as tk
 import time
 
 UNIT = 40
@@ -10,7 +10,7 @@ MAZE_W = 4
 
 class Maze(tk.Tk):
 	def __init__(self):
-		super(Maze, self).__init__()
+		super(Maze, self).__init_()
 		self.action_space = ['u','d','l','r']
 		self.n_actions = len(self.action_space)
 		self.title('maze')
